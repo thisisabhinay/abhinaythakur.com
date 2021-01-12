@@ -9,6 +9,7 @@ import { HeaderTopComponent } from "./header/header-top/header-top.component";
 import { IntroComponent } from "./intro/intro.component";
 import { HomeComponent } from './page/home/home.component';
 import { LabelValueComponent } from './label-value/label-value.component';
+import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { LabelValueComponent } from './label-value/label-value.component';
         HeaderTopComponent,
         IntroComponent,
         HomeComponent,
-        LabelValueComponent
+        LabelValueComponent,
+        SocialIconsComponent
     ],
     imports: [
         BrowserModule,
