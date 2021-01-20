@@ -10,6 +10,7 @@ import { IntroComponent } from "./intro/intro.component";
 import { HomeComponent } from './page/home/home.component';
 import { LabelValueComponent } from './label-value/label-value.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
+import { HeaderSectionComponent } from './header/header-section/header-section.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
         IntroComponent,
         HomeComponent,
         LabelValueComponent,
-        SocialIconsComponent
+        SocialIconsComponent,
+        HeaderSectionComponent
     ],
     imports: [
         BrowserModule,

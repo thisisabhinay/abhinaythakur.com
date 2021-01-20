@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-
+/* eslint-disable @typescript-eslint/no-empty-function */
+import { Component, OnInit } from "@angular/core";
+import { resume } from "../../page/home/data";
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+    selector: "app-home",
+    templateUrl: "./home.component.html",
+    styleUrls: ["./home.component.sass"]
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        console.log(resume);
+    }
 
 }
