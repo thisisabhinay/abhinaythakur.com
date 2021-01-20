@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col">
+            <div class="col-6">
                 <h3>{{item.designation}}</h3>
                 <h5>{{item.years}}</h5>
                 <h5>{{item.company}}</h5>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col">
+            <div class="col-6">
                 <h3>{{item.institute}}</h3>
                 <h5>{{item.years}}</h5>
                 <h5>{{item.course}}</h5>
@@ -58,8 +58,8 @@
                 <app-header-section title="Skills & Expertise"></app-header-section>
             </div>
         </div>
-        <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col">
+        <div class="row">
+            <div class="col" *ngFor="let item of resume[feature]">
                 <h3>{{item.domain}}</h3>
                 <ul>
                     <li *ngFor="let skill of item.skills">
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col">
+            <div class="col-6">
                 <h3>{{item.title}}</h3>
                 <h5>{{item.description}}</h5>
             </div>
