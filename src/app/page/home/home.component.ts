@@ -7,11 +7,21 @@ import { resume } from "../../page/home/data";
     styleUrls: ["./home.component.sass"]
 })
 export class HomeComponent implements OnInit {
+    resume = resume;
+    resumeFeatures = Object.keys(this.resume);
 
     constructor() { }
 
     ngOnInit(): void {
         console.log(resume);
+        console.log(Object.keys(resume));
+    }
+
+    getObjectKeys(obj: any): Array<string> {
+        return Object.keys(obj);
+    }
+    print(obj: any): string {
+        return JSON.stringify(obj);
     }
 
 }
