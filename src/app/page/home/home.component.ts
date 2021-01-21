@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, OnInit } from "@angular/core";
-import { resume } from "../../page/home/data";
+import { resume } from "../../data";
 @Component({
     selector: "app-home",
     templateUrl: "./home.component.html",
@@ -20,8 +20,4 @@ export class HomeComponent implements OnInit {
     getObjectKeys(obj: any): Array<string> {
         return Object.keys(obj);
     }
-    print(obj: any): string {
-        return JSON.stringify(obj);
-    }
-
 }

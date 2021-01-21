@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, OnInit } from "@angular/core";
+import { resume } from "../data";
 
 @Component({
     selector: "app-social-icons",
@@ -7,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: ["./social-icons.component.sass"]
 })
 export class SocialIconsComponent implements OnInit {
+    contact = resume.contact[0];
 
     constructor() { }
 
