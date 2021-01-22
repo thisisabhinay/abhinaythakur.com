@@ -11,6 +11,7 @@ import { HomeComponent } from './page/home/home.component';
 import { LabelValueComponent } from './label-value/label-value.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { HeaderSectionComponent } from './header/header-section/header-section.component';
+import { PortfolioComponent } from './page/portfolio/portfolio.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { HeaderSectionComponent } from './header/header-section/header-section.c
         HomeComponent,
         LabelValueComponent,
         SocialIconsComponent,
-        HeaderSectionComponent
+        HeaderSectionComponent,
+        PortfolioComponent
     ],
     imports: [
         BrowserModule,
