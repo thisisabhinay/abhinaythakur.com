@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 })
 export class CardComponent implements OnInit {
     @Input("title") title: string;
+    @Input("cover") cover: string;
     @Input("description") description: string;
 
     constructor() { }
