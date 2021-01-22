@@ -12,6 +12,7 @@ import { LabelValueComponent } from './label-value/label-value.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { HeaderSectionComponent } from './header/header-section/header-section.component';
 import { PortfolioComponent } from './page/portfolio/portfolio.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { PortfolioComponent } from './page/portfolio/portfolio.component';
         LabelValueComponent,
         SocialIconsComponent,
         HeaderSectionComponent,
-        PortfolioComponent
+        PortfolioComponent,
+        CardComponent
     ],
     imports: [
         BrowserModule,
