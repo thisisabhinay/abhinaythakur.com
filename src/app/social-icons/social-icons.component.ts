@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, OnInit } from "@angular/core";
-import { resume } from "../data";
+import { resume } from "../resume";
 
 @Component({
     selector: "app-social-icons",
