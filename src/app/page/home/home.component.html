@@ -3,47 +3,15 @@
         <app-intro></app-intro>
     </div>
 </div>
+<app-experience-item></app-experience-item>
+<app-education></app-education>
+<app-skills></app-skills>
+<app-contact></app-contact>
 <div class="row" *ngFor="let feature of resumeFeatures">
 
     <!-- EXPERIENCE -->
-    <div class="col resume-section" *ngIf="feature==='experience'">
-        <div class="row">
-            <div class="col">
-                <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
-            </div>
-        </div>
-        <div class="row entry-{{i}}" *ngFor="let item of resume[feature]; index as i">
-            <div class="col">
-                <div class="row">
-                    <div class="col-7">
-                        <h2 class="no-margin">
-                            {{item.designation}}
-                        </h2>
-                    </div>
-                    <div class="col-5 text-right">
-                        <h2 class="no-margin">
-                            {{item.years}}
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="no-margin">
-                            {{item.company}}
-                        </h4>
-                        <h4 class="no-margin">
-                            {{item.location}}
-                        </h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-7">
-                        <app-list [list]="item.description"></app-list>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-experience [data]="resume['experience']" layoutContext="home" feature="experience"></app-experience>
+
 
     <!-- EDUCATION -->
     <div class="col resume-section" *ngIf="feature==='education'">
