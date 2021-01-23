@@ -3,56 +3,22 @@
         <app-intro></app-intro>
     </div>
 </div>
-<app-education></app-education>
-<app-skills></app-skills>
-<app-contact></app-contact>
 
+<!-- EXPERIENCE -->
 <div class="row">
     <div class="col-12">
         <app-experience [data]="resume['experience']" layoutContext="home" feature="experience"></app-experience>
     </div>
 </div>
 
-<div class="row" *ngFor="let feature of resumeFeatures">
-
-    <!-- EXPERIENCE -->
-
-
-    <!-- EDUCATION -->
-    <div class="col resume-section" *ngIf="feature==='education'">
-        <div class="row">
-            <div class="col">
-                <app-header-section id="{{feature}}" title="Education"></app-header-section>
-            </div>
-        </div>
-        <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col">
-                <div class="row">
-                    <div class="col-7">
-                        <h2 class="no-margin">
-                            {{item.institute}}
-                        </h2>
-                    </div>
-                    <div class="col-5 text-right">
-                        <h2 class="no-margin">
-                            {{item.years}}
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="no-margin">
-                            {{item.course}}
-                        </h4>
-                        <h4 class="no-margin">
-                            {{item.location}}
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- EDUCATION -->
+<div class="row">
+    <div class="col-12">
+        <app-education [data]="resume['education']" layoutContext="home" feature="education"></app-education>
     </div>
+</div>
 
+<div class="row" *ngFor="let feature of resumeFeatures">
     <!-- SKILLS -->
     <div class="col resume-section section-skills" *ngIf="feature==='skills'">
         <div class="row">
