@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
         console.log(Object.keys(resume));
     }
 
+    print(d): string {
+        return JSON.stringify(d);
+    }
+
     getObjectKeys(obj: any): Array<string> {
         return Object.keys(obj);
     }

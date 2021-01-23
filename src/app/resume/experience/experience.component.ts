@@ -13,6 +13,10 @@ export class ExperienceComponent implements OnInit {
 
     constructor() { }
 
+    print(d): string {
+        return JSON.stringify(d);
+    }
+
     ngOnInit(): void {
     }
 

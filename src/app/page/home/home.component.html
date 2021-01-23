@@ -3,14 +3,19 @@
         <app-intro></app-intro>
     </div>
 </div>
-<app-experience-item></app-experience-item>
 <app-education></app-education>
 <app-skills></app-skills>
 <app-contact></app-contact>
+
+<div class="row">
+    <div class="col-12">
+        <app-experience [data]="resume['experience']" layoutContext="home" feature="experience"></app-experience>
+    </div>
+</div>
+
 <div class="row" *ngFor="let feature of resumeFeatures">
 
     <!-- EXPERIENCE -->
-    <app-experience [data]="resume['experience']" layoutContext="home" feature="experience"></app-experience>
 
 
     <!-- EDUCATION -->

@@ -1,10 +1,14 @@
-<div class="col resume-section">
+<div class="resume-section">
     <div class="row">
-        <div class="col">
+        <div class="col-12">
             <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
         </div>
     </div>
 
-    <app-experience-item *ngFor="let item of data" [data]="item" layoutContext="resume-section">
-    </app-experience-item>
+    <div class="row">
+        <div class="col-12">
+            <app-experience-item *ngFor="let item of data" [data]="item" layoutContext="resume-section">
+            </app-experience-item>
+        </div>
+    </div>
 </div>
