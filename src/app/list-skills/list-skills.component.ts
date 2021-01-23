@@ -2,16 +2,15 @@
 import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-    selector: "app-list",
-    templateUrl: "./list.component.html",
-    styleUrls: ["./list.component.sass"]
+    selector: "app-list-skills",
+    templateUrl: "./list-skills.component.html",
+    styleUrls: ["./list-skills.component.sass"]
 })
-export class ListComponent implements OnInit {
+export class ListSkillsComponent implements OnInit {
     @Input("list") list: any[];
-    @Input("feature") feature: string
-
     constructor() { }
 
     ngOnInit(): void {
     }
+
 }

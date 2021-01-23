@@ -99,7 +99,7 @@ export const resume = {
             { text: "HTML/CSS" },
             { text: "JavaScript" },
             { text: "JQuery" },
-            { text: "Angualr" },
+            { text: "Angular" },
             { text: "React.js" }
         ]
     }, {

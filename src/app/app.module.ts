@@ -14,6 +14,7 @@ import { HeaderSectionComponent } from './header/header-section/header-section.c
 import { PortfolioComponent } from './page/portfolio/portfolio.component';
 import { CardComponent } from './card/card.component';
 import { ListComponent } from './list/list.component';
+import { ListSkillsComponent } from './list-skills/list-skills.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { ListComponent } from './list/list.component';
         HeaderSectionComponent,
         PortfolioComponent,
         CardComponent,
-        ListComponent
+        ListComponent,
+        ListSkillsComponent
     ],
     imports: [
         BrowserModule,

@@ -12,26 +12,26 @@
                 <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
             </div>
         </div>
-        <div class="row" *ngFor="let item of resume[feature]">
+        <div class="row entry-{{i}}" *ngFor="let item of resume[feature]; index as i">
             <div class="col">
                 <div class="row">
                     <div class="col-7">
-                        <h2>
+                        <h2 class="no-margin">
                             {{item.designation}}
                         </h2>
                     </div>
                     <div class="col-5 text-right">
-                        <h2>
+                        <h2 class="no-margin">
                             {{item.years}}
                         </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h4>
+                        <h4 class="no-margin">
                             {{item.company}}
                         </h4>
-                        <h4>
+                        <h4 class="no-margin">
                             {{item.location}}
                         </h4>
                     </div>
@@ -56,22 +56,22 @@
             <div class="col">
                 <div class="row">
                     <div class="col-7">
-                        <h2>
+                        <h2 class="no-margin">
                             {{item.institute}}
                         </h2>
                     </div>
                     <div class="col-5 text-right">
-                        <h2>
+                        <h2 class="no-margin">
                             {{item.years}}
                         </h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h4>
+                        <h4 class="no-margin">
                             {{item.course}}
                         </h4>
-                        <h4>
+                        <h4 class="no-margin">
                             {{item.location}}
                         </h4>
                     </div>
@@ -81,18 +81,18 @@
     </div>
 
     <!-- SKILLS -->
-    <div class="col resume-section" *ngIf="feature==='skills'">
+    <div class="col resume-section section-skills" *ngIf="feature==='skills'">
         <div class="row">
             <div class="col">
                 <app-header-section id="{{feature}}" title="Skills & Expertise"></app-header-section>
             </div>
         </div>
         <div class="row">
-            <div class="col" *ngFor="let item of resume[feature]">
-                <h2>
+            <div class="col-12 col-sm-6 col-lg-3" *ngFor="let item of resume[feature]">
+                <h2 class="no-margin">
                     {{item.domain}}
                 </h2>
-                <app-list [list]="item.skills"></app-list>
+                <app-list-skills [list]="item.skills"></app-list-skills>
             </div>
         </div>
     </div>
@@ -106,10 +106,10 @@
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
             <div class="col-7">
-                <h2>
+                <h2 class="no-margin">
                     {{item.title}}
                 </h2>
-                <h4>
+                <h4 class="no-margin">
                     {{item.description}}
                 </h4>
             </div>
