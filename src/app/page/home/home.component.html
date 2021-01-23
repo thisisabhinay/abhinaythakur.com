@@ -9,7 +9,7 @@
     <div class="col resume-section" *ngIf="feature==='experience'">
         <div class="row">
             <div class="col">
-                <app-header-section title="Professional Experience"></app-header-section>
+                <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
@@ -35,7 +35,7 @@
     <div class="col resume-section" *ngIf="feature==='education'">
         <div class="row">
             <div class="col">
-                <app-header-section title="Education"></app-header-section>
+                <app-header-section id="{{feature}}" title="Education"></app-header-section>
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
@@ -60,7 +60,7 @@
     <div class="col resume-section" *ngIf="feature==='skills'">
         <div class="row">
             <div class="col">
-                <app-header-section title="Skills & Expertise"></app-header-section>
+                <app-header-section id="{{feature}}" title="Skills & Expertise"></app-header-section>
             </div>
         </div>
         <div class="row">
@@ -77,7 +77,7 @@
     <div class="col resume-section" *ngIf="feature==='contact'">
         <div class="row">
             <div class="col">
-                <app-header-section title="Contact"></app-header-section>
+                <app-header-section id="{{feature}}" title="Contact"></app-header-section>
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">

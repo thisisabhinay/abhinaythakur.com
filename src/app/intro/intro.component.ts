@@ -21,7 +21,7 @@ export class IntroComponent implements OnInit {
         console.log(this.canvas);
         this.ctx = this.canvas.nativeElement.getContext("2d");
 
-        this.ctx.fillStyle = "#0924FC";
+        this.ctx.fillStyle = "#f1f4f7";
         this.ctx.fillRect(150, 50, 400, 400);
         this.ctx.clearRect(200, 200, 200, 200);
         this.ctx.strokeRect(250, 250, 150, 150);
