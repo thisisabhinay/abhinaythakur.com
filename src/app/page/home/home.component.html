@@ -3,8 +3,9 @@
         <app-intro></app-intro>
     </div>
 </div>
-
 <div class="row" *ngFor="let feature of resumeFeatures">
+
+    <!-- EXPERIENCE -->
     <div class="col resume-section" *ngIf="feature==='experience'">
         <div class="row">
             <div class="col">
@@ -13,30 +14,24 @@
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
             <div class="col-6">
-                <h3>{{item.designation}}</h3>
-                <h5>{{item.years}}</h5>
-                <h5>{{item.company}}</h5>
-                <h5>{{item.location}}</h5>
-                <ul>
-                    <li *ngFor="let point of item.description">
-
-                        <p>{{point.text}}</p>
-
-                        <ul *ngIf="point.description">
-
-                            <li *ngFor="let nestedPoint of point.description">
-
-                                <p class="text-bold">{{nestedPoint.heading}}</p>
-                                <p>{{nestedPoint.text}}</p>
-
-                            </li>
-
-                        </ul>
-                    </li>
-                </ul>
+                <h3>
+                    {{item.designation}}
+                </h3>
+                <h5>
+                    {{item.years}}
+                </h5>
+                <h5>
+                    {{item.company}}
+                </h5>
+                <h5>
+                    {{item.location}}
+                </h5>
+                <app-list [list]="item.description"></app-list>
             </div>
         </div>
     </div>
+
+    <!-- EDUCATION -->
     <div class="col resume-section" *ngIf="feature==='education'">
         <div class="row">
             <div class="col">
@@ -45,13 +40,23 @@
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
             <div class="col-6">
-                <h3>{{item.institute}}</h3>
-                <h5>{{item.years}}</h5>
-                <h5>{{item.course}}</h5>
-                <h5>{{item.location}}</h5>
+                <h3>
+                    {{item.institute}}
+                </h3>
+                <h5>
+                    {{item.years}}
+                </h5>
+                <h5>
+                    {{item.course}}
+                </h5>
+                <h5>
+                    {{item.location}}
+                </h5>
             </div>
         </div>
     </div>
+
+    <!-- SKILLS -->
     <div class="col resume-section" *ngIf="feature==='skills'">
         <div class="row">
             <div class="col">
@@ -60,15 +65,15 @@
         </div>
         <div class="row">
             <div class="col" *ngFor="let item of resume[feature]">
-                <h3>{{item.domain}}</h3>
-                <ul>
-                    <li *ngFor="let skill of item.skills">
-                        {{skill}}
-                    </li>
-                </ul>
+                <h3>
+                    {{item.domain}}
+                </h3>
+                <app-list [list]="item.skills"></app-list>
             </div>
         </div>
     </div>
+
+    <!-- CONTACT -->
     <div class="col resume-section" *ngIf="feature==='contact'">
         <div class="row">
             <div class="col">
@@ -77,8 +82,12 @@
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
             <div class="col-6">
-                <h3>{{item.title}}</h3>
-                <h5>{{item.description}}</h5>
+                <h3>
+                    {{item.title}}
+                </h3>
+                <h5>
+                    {{item.description}}
+                </h5>
             </div>
         </div>
         <app-social-icons></app-social-icons>

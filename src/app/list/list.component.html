@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let item of list">
+        <p class="bold" *ngIf="item.heading">{{item.heading}}</p>
+        <p>{{item.text}}</p>
+
+        <app-list *ngIf="item.description" [list]="item.description"></app-list>
+    </li>
+</ul>

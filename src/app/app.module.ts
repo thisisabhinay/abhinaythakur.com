@@ -13,6 +13,7 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { HeaderSectionComponent } from './header/header-section/header-section.component';
 import { PortfolioComponent } from './page/portfolio/portfolio.component';
 import { CardComponent } from './card/card.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { CardComponent } from './card/card.component';
         SocialIconsComponent,
         HeaderSectionComponent,
         PortfolioComponent,
-        CardComponent
+        CardComponent,
+        ListComponent
     ],
     imports: [
         BrowserModule,

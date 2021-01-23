@@ -73,48 +73,48 @@ export const resume = {
     "skills": [{
         "domain": "User Experience",
         "skills": [
-            "User Research​",
-            "Human-Computer Interaction",
-            "Design Thinking",
-            "Wireframes",
-            "Information Architecture",
-            "Interface Design",
-            "Visual Design",
-            "Lean UX methodologies",
-            "Usability Testing",
-            "Gamification/Game Design"
+            { text: "User Research​" },
+            { text: "Human-Computer Interaction" },
+            { text: "Design Thinking" },
+            { text: "Wireframes" },
+            { text: "Information Architecture" },
+            { text: "Interface Design" },
+            { text: "Visual Design" },
+            { text: "Lean UX methodologies" },
+            { text: "Usability Testing" },
+            { text: "Gamification/Game Design" }
         ]
     }, {
         "domain": "Visual",
         "skills": [
-            "Sketching/Drawing",
-            "Illustration",
-            "Image Editing",
-            "Video Editing",
-            "Storyboarding"
+            { text: "Sketching/Drawing" },
+            { text: "Illustration" },
+            { text: "Image Editing" },
+            { text: "Video Editing" },
+            { text: "Storyboarding" }
         ]
     }, {
         "domain": "Prototyping",
         "skills": [
-            "HTML/CSS",
-            "JavaScript",
-            "JQuery",
-            "Angualr",
-            "React.js"
+            { text: "HTML/CSS" },
+            { text: "JavaScript" },
+            { text: "JQuery" },
+            { text: "Angualr" },
+            { text: "React.js" }
         ]
     }, {
         "domain": "Softwares & Tools",
         "skills": [
-            "Adobe Photoshop",
-            "Adobe XD",
-            "Sketch App",
-            "Adobe Illustrator",
-            "Adobe After Effects",
-            "Figma",
-            "Invision",
-            "Marvel App",
-            "GitHub",
-            "Unity 3D"
+            { text: "Adobe Photoshop" },
+            { text: "Adobe XD" },
+            { text: "Sketch App" },
+            { text: "Adobe Illustrator" },
+            { text: "Adobe After Effects" },
+            { text: "Figma" },
+            { text: "Invision" },
+            { text: "Marvel App" },
+            { text: "GitHub" },
+            { text: "Unity 3D" }
         ]
     }],
     "contact": [{
