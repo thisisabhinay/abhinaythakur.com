@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 })
 export class ExperienceItemComponent implements OnInit {
     @Input("data") data: any;
+    @Input("index") index: string;
     @Input("layoutContext") layoutContext: string;
 
     constructor() { }

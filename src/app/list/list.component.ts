@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from "@angular/core";
 export class ListComponent implements OnInit {
     @Input("list") list: any[];
     @Input("feature") feature: string
+    @Input("layoutContext") layoutContext: string
 
     constructor() { }
 

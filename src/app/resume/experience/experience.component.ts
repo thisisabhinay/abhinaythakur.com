@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from "@angular/core";
 export class ExperienceComponent implements OnInit {
     @Input("data") data: unknown;
     @Input("feature") feature: string;
+    @Input("index") index: string;
     @Input("layoutContext") layoutContext: string;
 
     constructor() { }

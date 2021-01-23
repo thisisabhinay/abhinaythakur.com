@@ -1,14 +1,17 @@
-<div class="resume-section">
-    <div class="row">
-        <div class="col-12">
-            <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
+<div class="row resume-section layout-context__{{layoutContext}}">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12">
+                <app-header-section id="{{feature}}" title="Professional Experience"></app-header-section>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <app-experience-item *ngFor="let item of data" [data]="item" layoutContext="resume-section">
-            </app-experience-item>
+        <div class="row">
+            <div class="col-12">
+                <app-experience-item *ngFor="let item of data; index as i" [data]="item" layoutContext="resume-section"
+                    [index]="i">
+                </app-experience-item>
+            </div>
         </div>
     </div>
 </div>

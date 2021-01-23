@@ -1,9 +1,9 @@
-<ul class="at-list">
+<ul class="at-list layout-context__{{layoutContext}}">
     <li class="at-list__item" *ngFor="let item of list">
         <p class="bold at-item__heading" *ngIf="item.heading">{{item.heading}}</p>
 
         <p class="at-item__text">{{item.text}}</p>
 
-        <app-list *ngIf=" item.description" [list]="item.description"></app-list>
+        <app-list *ngIf=" item.description" [list]="item.description" layoutContext="list"></app-list>
     </li>
 </ul>
