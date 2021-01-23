@@ -13,20 +13,34 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col-6">
-                <h3>
-                    {{item.designation}}
-                </h3>
-                <h5>
-                    {{item.years}}
-                </h5>
-                <h5>
-                    {{item.company}}
-                </h5>
-                <h5>
-                    {{item.location}}
-                </h5>
-                <app-list [list]="item.description"></app-list>
+            <div class="col">
+                <div class="row">
+                    <div class="col-7">
+                        <h2>
+                            {{item.designation}}
+                        </h2>
+                    </div>
+                    <div class="col-5 text-right">
+                        <h2>
+                            {{item.years}}
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h4>
+                            {{item.company}}
+                        </h4>
+                        <h4>
+                            {{item.location}}
+                        </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <app-list [list]="item.description"></app-list>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -39,19 +53,29 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col-6">
-                <h3>
-                    {{item.institute}}
-                </h3>
-                <h5>
-                    {{item.years}}
-                </h5>
-                <h5>
-                    {{item.course}}
-                </h5>
-                <h5>
-                    {{item.location}}
-                </h5>
+            <div class="col">
+                <div class="row">
+                    <div class="col-7">
+                        <h2>
+                            {{item.institute}}
+                        </h2>
+                    </div>
+                    <div class="col-5 text-right">
+                        <h2>
+                            {{item.years}}
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h4>
+                            {{item.course}}
+                        </h4>
+                        <h4>
+                            {{item.location}}
+                        </h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -65,9 +89,9 @@
         </div>
         <div class="row">
             <div class="col" *ngFor="let item of resume[feature]">
-                <h3>
+                <h2>
                     {{item.domain}}
-                </h3>
+                </h2>
                 <app-list [list]="item.skills"></app-list>
             </div>
         </div>
@@ -81,13 +105,13 @@
             </div>
         </div>
         <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col-6">
-                <h3>
+            <div class="col-7">
+                <h2>
                     {{item.title}}
-                </h3>
-                <h5>
+                </h2>
+                <h4>
                     {{item.description}}
-                </h5>
+                </h4>
             </div>
         </div>
         <app-social-icons></app-social-icons>
