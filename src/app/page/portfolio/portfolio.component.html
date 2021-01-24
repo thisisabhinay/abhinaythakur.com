@@ -1,6 +1,6 @@
 <div class="protflio-header">
     <div class="row">
-        <div class="col">
+        <div class="col-12">
             <p>
                 This portfolio is categorised by domains covering
                 <a routerLink="./" fragment="lean-ux" (click)="onClickScroll('lean-ux')">lean UX</a> methodologies,
@@ -27,14 +27,14 @@
 
 <div class="portfolio-section">
     <div class="row portfolio-section__group" *ngFor="let group of portfolio">
-        <div class="col">
+        <div class="col-12">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <app-header-section [id]="[group.anchor]" [title]="group.section"></app-header-section>
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" *ngFor="let project of group.items">
+                <div class="col-6 col-lg-4" *ngFor="let project of group.items">
                     <app-card [title]="project.title" [description]="project.description" [cover]="project.cover"
                         layoutContext="portfolio-section group-{{group.anchor}}">
                     </app-card>
