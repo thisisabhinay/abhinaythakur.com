@@ -7,12 +7,19 @@
         font-size: 1.125rem
         font-family: 'PublicSans', 'Roboto', sans-serif
 
+    .navbar-toggler
+        border: none
+        color: $black
+
     .navbar-nav
+        border-top: 1px solid $blue
+        margin-top: 1rem
+
         .nav-link
             font-size: 1rem
             font-family: 'PublicSans', 'Roboto', sans-serif
             color: #000
-            margin: 0 0 0 1rem
+            margin: 1rem 0 0 0
             cursor: pointer
 
         .btn
@@ -30,3 +37,11 @@
 
             &:focus
                 border-color: lighten($blue, 5%)
+
+    @media (min-width: 992px)
+        .navbar-nav
+            border: none
+            margin-top: 0
+
+            .nav-link
+                margin: 0 0 0 1rem
