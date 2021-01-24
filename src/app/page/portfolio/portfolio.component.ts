@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
+import { ViewportScroller } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { portfolio } from "../../portfolio";
 
@@ -10,9 +11,12 @@ import { portfolio } from "../../portfolio";
 export class PortfolioComponent implements OnInit {
     portfolio = portfolio;
 
-    constructor() { }
+    constructor(private viewPortScroller: ViewportScroller) { }
 
     ngOnInit(): void {
     }
 
+    onClickScroll(elementId: string): void {
+        this.viewPortScroller.scrollToAnchor(elementId);
+    }
 }

@@ -1,6 +1,6 @@
 export const portfolio = [{
     section: "Lean UX",
-    anchor: "leanUx",
+    anchor: "lean-ux",
     items: [{
         title: "Comparison Engine",
         description: "A case study in applying lean ux to bring an idea into market.",
@@ -9,7 +9,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Design Thinking",
-    anchor: "designThinking",
+    anchor: "design-thinking",
     items: [{
         title: "Socialization of online fantasy sports",
         description: "Designing the social engagement experience of a fantasy sports platform on web.",
@@ -67,7 +67,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Game Design",
-    anchor: "gameDesign",
+    anchor: "game-design",
     items: [{
         title: "Last Man",
         description: "A post apocalyptic sci-fi narrative expressed through puzzle based gameplay mechanics.",
@@ -81,7 +81,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Visual Design",
-    anchor: "visualDesign",
+    anchor: "visual-design",
     items: [{
         title: "Ritz",
         description: "A grandeur and ostentatious design language.",

@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -19,7 +20,7 @@ import { EducationComponent } from "./resume/education/education.component";
 import { SkillsComponent } from "./resume/skills/skills.component";
 import { ContactComponent } from "./resume/contact/contact.component";
 import { ExperienceItemComponent } from "./resume/experience/experience-item/experience-item.component";
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
     declarations: [
@@ -44,7 +45,8 @@ import { FooterComponent } from './footer/footer.component';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        RouterModule
     ],
     providers: [],
     bootstrap: [AppComponent]

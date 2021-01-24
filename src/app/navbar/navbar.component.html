@@ -8,16 +8,16 @@
   </button>
   <div class="collapse navbar-collapse float-right flex-row-reverse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-link" href="#experience">
+      <a class="nav-link" routerLink="./" fragment="experience" (click)="onClickScroll('experience')">
         Experience
       </a>
-      <a class="nav-link" href="#skills">
+      <a class="nav-link" routerLink="./" fragment="skills" (click)="onClickScroll('skills')">
         Skills
       </a>
-      <a class="nav-link" href="#contact">
+      <a class=" nav-link" routerLink="./" fragment="contact" (click)="onClickScroll('contact')">
         Contact
       </a>
-      <a class="nav-link btn btn-primary" href="/portfolio">
+      <a class=" nav-link btn btn-primary" routerLink="/portfolio">
         Portfolio
       </a>
     </div>
