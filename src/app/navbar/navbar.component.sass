@@ -1,3 +1,5 @@
+@import "../../variables"
+
 .at-navbar
     padding: 0
 
@@ -20,3 +22,11 @@
             color: #FFF
             text-transform: uppercase
             letter-spacing: 0
+
+            &:active,
+            &:hover,
+            &:focus
+                background-color: darken($blue, 10%)
+
+            &:focus
+                border-color: lighten($blue, 5%)
