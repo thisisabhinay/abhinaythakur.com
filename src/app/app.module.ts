@@ -14,11 +14,11 @@ import { HeaderSectionComponent } from "./header/header-section/header-section.c
 import { PortfolioComponent } from "./page/portfolio/portfolio.component";
 import { CardComponent } from "./card/card.component";
 import { ListComponent } from "./list/list.component";
-import { ExperienceComponent } from './resume/experience/experience.component';
-import { EducationComponent } from './resume/education/education.component';
-import { SkillsComponent } from './resume/skills/skills.component';
-import { ContactComponent } from './resume/contact/contact.component';
-import { ExperienceItemComponent } from './resume/Experience/experience-item/experience-item.component';
+import { ExperienceComponent } from "./resume/experience/experience.component";
+import { EducationComponent } from "./resume/education/education.component";
+import { SkillsComponent } from "./resume/skills/skills.component";
+import { ContactComponent } from "./resume/contact/contact.component";
+import { ExperienceItemComponent } from "./resume/Experience/experience-item/experience-item.component";
 
 @NgModule({
     declarations: [
