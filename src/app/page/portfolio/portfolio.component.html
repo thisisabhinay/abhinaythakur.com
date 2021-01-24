@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-lg-4" *ngFor="let project of group.items">
+                <div class="col-12 col-md-6 col-lg-4" *ngFor="let project of group.items">
                     <app-card [title]="project.title" [description]="project.description" [cover]="project.cover"
                         layoutContext="portfolio-section group-{{group.anchor}}">
                     </app-card>
