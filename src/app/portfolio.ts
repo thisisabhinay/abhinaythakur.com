@@ -1,5 +1,6 @@
 export const portfolio = [{
     section: "Lean UX",
+    anchor: "leanUx",
     items: [{
         title: "Comparison Engine",
         description: "A case study in applying lean ux to bring an idea into market.",
@@ -8,6 +9,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Design Thinking",
+    anchor: "designThinking",
     items: [{
         title: "Socialization of online fantasy sports",
         description: "Designing the social engagement experience of a fantasy sports platform on web.",
@@ -46,6 +48,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Gamification of UX",
+    anchor: "gamification",
     items: [{
         title: "Gamifying Fantasy Leagues",
         description: "Making leauge participation a fun activity.",
@@ -64,6 +67,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Game Design",
+    anchor: "gameDesign",
     items: [{
         title: "Last Man",
         description: "A post apocalyptic sci-fi narrative expressed through puzzle based gameplay mechanics.",
@@ -77,6 +81,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Visual Design",
+    anchor: "visualDesign",
     items: [{
         title: "Ritz",
         description: "A grandeur and ostentatious design language.",
@@ -90,6 +95,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Prototyping",
+    anchor: "prototyping",
     items: [{
         title: "Fanzoo Leaderboard",
         description: "Implementing the Live Leaderboard in native JS.",
@@ -113,6 +119,7 @@ export const portfolio = [{
     }]
 }, {
     section: "Ideation / Concept Design",
+    anchor: "ideation",
     items: [{
         title: "Gamification of Team Collaboration",
         description: "Storyboard and concept sketches.",

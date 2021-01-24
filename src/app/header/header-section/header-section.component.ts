@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 })
 export class HeaderSectionComponent implements OnInit {
     @Input("title") title: string;
+    @Input("anchor") anchor: string;
 
     constructor() { }
 
