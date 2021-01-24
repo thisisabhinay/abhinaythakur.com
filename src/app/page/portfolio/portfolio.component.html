@@ -1,25 +1,30 @@
-<div class="row protflio-header">
-  <div class="col">
-    <p>
-      This portfolio is categorised by domains covering lean UX methodologies, application of design thinking, gamification of user experience or game design in general, visual design, prototyping through code and ideation where abstract concepts take shapes.
-    </p>
-  </div>
+<div class="protflio-header">
+    <div class="row">
+        <div class="col">
+            <p>
+                This portfolio is categorised by domains covering lean UX methodologies, application of design thinking,
+                gamification of user experience or game design in general, visual design, prototyping through code and
+                ideation
+                where abstract concepts take shapes.
+            </p>
+        </div>
+    </div>
 </div>
-<div class="row portfolio-section" *ngFor="let group of portfolio">
-  <div class="col">
-    <div class="row">
-      <div class="col">
-        <app-header-section title="{{group.section}}"></app-header-section>
-      </div>
+
+<div class="portfolio-section">
+    <div class="row" *ngFor="let group of portfolio">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <app-header-section title="{{group.section}}"></app-header-section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4" *ngFor="let project of group.items">
+                    <app-card title="{{project.title}}" description="{{project.description}}" cover="{{project.cover}}">
+                    </app-card>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-4" *ngFor="let project of group.items">
-        <app-card
-          title="{{project.title}}"
-          description="{{project.description}}"
-          cover="{{project.cover}}"
-        ></app-card>
-      </div>
-    </div>
-  </div>
 </div>
