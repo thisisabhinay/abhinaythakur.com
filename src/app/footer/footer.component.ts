@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
+import { ViewportScroller } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -8,9 +9,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class FooterComponent implements OnInit {
 
-    constructor() { }
+    constructor(private viewPortScroller: ViewportScroller) { }
 
     ngOnInit(): void {
+    }
+
+    scrollToTop(): void {
+        this.viewPortScroller.scrollToPosition([0, 0]);
     }
 
 }
