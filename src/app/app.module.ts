@@ -19,6 +19,7 @@ import { EducationComponent } from "./resume/education/education.component";
 import { SkillsComponent } from "./resume/skills/skills.component";
 import { ContactComponent } from "./resume/contact/contact.component";
 import { ExperienceItemComponent } from "./resume/experience/experience-item/experience-item.component";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -38,7 +39,8 @@ import { ExperienceItemComponent } from "./resume/experience/experience-item/exp
         EducationComponent,
         SkillsComponent,
         ContactComponent,
-        ExperienceItemComponent
+        ExperienceItemComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
