@@ -25,26 +25,9 @@
     </div>
 </div>
 
-
-<div class="row" *ngFor="let feature of resumeFeatures">
-
-    <!-- CONTACT -->
-    <div class="col resume-section" *ngIf="feature==='contact'">
-        <div class="row">
-            <div class="col">
-                <app-header-section id="{{feature}}" title="Contact"></app-header-section>
-            </div>
-        </div>
-        <div class="row" *ngFor="let item of resume[feature]">
-            <div class="col-7">
-                <h2 class="no-margin">
-                    {{item.title}}
-                </h2>
-                <h4 class="no-margin">
-                    {{item.description}}
-                </h4>
-            </div>
-        </div>
-        <app-social-icons></app-social-icons>
+<!-- CONTACT -->
+<div class="row">
+    <div class="col-12">
+        <app-contact [data]="resume['contact']" layoutContext="home" feature="contact"></app-contact>
     </div>
 </div>
