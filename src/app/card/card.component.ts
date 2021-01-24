@@ -10,6 +10,7 @@ export class CardComponent implements OnInit {
     @Input("title") title: string;
     @Input("cover") cover: string;
     @Input("description") description: string;
+    @Input("layoutContext") layoutContext: string;
 
     constructor() { }
 

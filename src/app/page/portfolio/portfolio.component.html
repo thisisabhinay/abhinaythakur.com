@@ -17,16 +17,17 @@
 </div>
 
 <div class="portfolio-section">
-    <div class="row" *ngFor="let group of portfolio">
+    <div class="row portfolio-section__group" *ngFor="let group of portfolio">
         <div class="col">
             <div class="row">
                 <div class="col">
-                    <app-header-section title="{{group.section}}"></app-header-section>
+                    <app-header-section [title]="group.section"></app-header-section>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4" *ngFor="let project of group.items">
-                    <app-card title="{{project.title}}" description="{{project.description}}" cover="{{project.cover}}">
+                    <app-card [title]="project.title" [description]="project.description" [cover]="project.cover"
+                        layoutContext="portfolio-section group-{{group.anchor}}">
                     </app-card>
                 </div>
             </div>
@@ -35,13 +36,13 @@
 </div>
 
 <!-- 
-This portfolio is categorised by domains covering
-<a (click)="scrollToElement(leanUx)">lean UX</a> methodologies, application of
-<a (click)="scrollToElement(designThinking)">design thinking</a>,
-<a (click)="scrollToElement(gamification)">gamification</a> of user experience or
-<a (click)="scrollToElement(gameDesign)">game design</a> in general,
-<a (click)="scrollToElement(visualDesign)">visual design</a>,
-<a (click)="scrollToElement(prototyping)">prototyping</a> through
-<span class="text-bold">code</span> and
-<a (click)="scrollToElement(ideation)">ideation</a> where abstract concepts take shapes. 
+    This portfolio is categorised by domains covering
+    <a (click)="scrollToElement(leanUx)">lean UX</a> methodologies, application of
+    <a (click)="scrollToElement(designThinking)">design thinking</a>,
+    <a (click)="scrollToElement(gamification)">gamification</a> of user experience or
+    <a (click)="scrollToElement(gameDesign)">game design</a> in general,
+    <a (click)="scrollToElement(visualDesign)">visual design</a>,
+    <a (click)="scrollToElement(prototyping)">prototyping</a> through
+    <span class="text-bold">code</span> and
+    <a (click)="scrollToElement(ideation)">ideation</a> where abstract concepts take shapes. 
 -->
