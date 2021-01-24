@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { Component, OnInit } from "@angular/core";
+import { Component, ElementRef, Input, OnInit, ViewChild } from "@angular/core";
 
 @Component({
     selector: "app-intro",
@@ -9,8 +9,17 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class IntroComponent implements OnInit {
+    @ViewChild("videoPlayer") videoPlayer: ElementRef<HTMLVideoElement>;
+
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    ngAfterViewInit(): void {
+        if (this.videoPlayer.nativeElement.paused) {
+            this.videoPlayer.nativeElement.muted = true;
+            this.videoPlayer.nativeElement.play();
+        }
     }
 }
