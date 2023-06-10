@@ -13,13 +13,11 @@ const mainSectionData = {
   fullName: 'Abhinay Thakur',
   role: 'Senior Frontend Engineer',
   details: [
-    { label: 'Phone', value: '+91 9650548957', url: 'tel:+919650548957' },
     { label: 'Email', value: 'sayhello@abhinaythakur.com', url: 'mailto:sayhello@abhinaythakur.com' },
-    { label: 'From', value: 'Bengaluru, India' },
     { label: 'Experience', value: '7+ Years' },
+    { label: 'From', value: 'Bengaluru, India' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '+91 9650548957' },
     { label: 'Email', value: 'sayhello@abhinaythakur.com' },
     { label: 'LinkedIn', value: '/in/thisisabhinay', url: 'https://linkedin.com' },
     { label: 'GitHub', value: '/thisisabhinay', url: 'https://github.com' },
