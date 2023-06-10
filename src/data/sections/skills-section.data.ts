@@ -1,22 +1,24 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
   astro,
-  chakraUi,
+  aws,
   cypress,
-  eslint,
   firebase,
+  gcp,
+  javascript,
+  jest,
   mongoDb,
   nestJs,
-  pnpm,
-  postgreSql,
-  prettier,
   react,
+  responsiveHtml,
+  restfulServices,
   sass,
   supabase,
   tailwindCss,
   typescript,
+  vue,
+  webAccessibility,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -30,48 +32,101 @@ const skillsSectionData = {
     {
       title: 'I already know',
       skills: [
-        react({
+        responsiveHtml({
           level: 5,
           description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+            'Skilled in employing advanced techniques to create flawlessly responsive websites and applications.',
         }),
-        typescript({
+
+        vue({
           level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          description:
+            'Skilled in leveraging Vue.js and its comprehensive ecosystem to deliver scalable and modular applications.',
         }),
+
+        react({
+          level: 4,
+          description:
+            'Experienced in architecting dynamic and highly interactive user interfaces using the renowned React library.',
+        }),
+
+        javascript({
+          level: 4,
+          description:
+            'Proficient in employing JavaScript with mastery in ES6+ syntax, DOM manipulation, and asynchronous programming.',
+        }),
+
         sass({
           level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+          description:
+            'Proficiently skilled at a level of 4, harnessing the full power of SASS (Syntactically Awesome Style Sheets) to compose maintainable and reusable CSS codebases.',
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
+
+        restfulServices({
           level: 4,
           description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+            'Experienced in architecting, implementing, and integrating RESTful services and APIs for seamless client-server communication.',
         }),
-        nestJs({
+
+        typescript({
           level: 3,
           description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+            'Proficient in leveraging TypeScript to enhance JavaScript projects with static typing and improved code organization.',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+
+        tailwindCss({
+          level: 3,
+          description:
+            'Adept at utilizing the Tailwind CSS framework to rapidly prototype visually compelling web interfaces.',
+        }),
+
+        webAccessibility({
+          level: 3,
+          description:
+            'Knowledgeable in applying web accessibility standards (WCAG) to ensure inclusivity and deliver accessible web solutions.',
+        }),
+
+        jest({
+          level: 3,
+          description:
+            'Experienced in working with MongoDB, a popular NoSQL database, for efficient data storage and retrieval in various projects.',
+        }),
+
+        cypress({
+          level: 3,
+          description:
+            'Experienced in working with MongoDB, a popular NoSQL database, for efficient data storage and retrieval in various projects.',
+        }),
+
+        mongoDb({
+          level: 3,
+          description:
+            'Experienced in working with MongoDB, a popular NoSQL database, for efficient data storage and retrieval in various projects.',
+        }),
+
+        firebase({
+          level: 3,
+          description:
+            'Skilled in utilizing Firebase, for rapidly developing and deploying web applications with features like authentication and real-time database functionality.',
+        }),
+
+        nestJs({
+          level: 2,
+          description:
+            'Adept in utilizing Nest.js, a powerful Node.js framework, to develop scalable and modular applications with a focus on code structure and maintainability.',
+        }),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      skills: [nestJs(), aws(), supabase(), astro(), gcp(), cypress()],
     },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:in', name: 'Hindi - Native' },
+        { icon: 'circle-flags:uk', name: 'English - Fluent' },
+        { icon: 'circle-flags:es', name: 'Spanish - A1' },
       ],
     },
   ],

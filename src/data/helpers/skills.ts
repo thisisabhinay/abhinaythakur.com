@@ -25,11 +25,46 @@ export const apolloGraphql = createSkillFactory({
   url: 'https://www.apollographql.com/',
 });
 
+export const aws = createSkillFactory({
+  name: 'AWS',
+  icon: 'simple-icons:amazonaws',
+  iconColor: '#232F3E',
+  url: 'https://aws.amazon.com/',
+});
+
 export const astro = createSkillFactory({
   name: 'Astro',
   icon: 'simple-icons:astro',
   iconColor: '#FF5D01',
   url: 'https://astro.build/',
+});
+
+export const javascript = createSkillFactory({
+  name: 'JavaScript',
+  icon: 'simple-icons:javascript',
+  iconColor: '#F7DF1E',
+  url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+});
+
+export const restfulServices = createSkillFactory({
+  name: 'RESTful Services',
+  icon: 'simple-icons:axios',
+  iconColor: '#5A29E4',
+  url: 'https://developer.ibm.com/articles/ws-restful/',
+});
+
+export const responsiveHtml = createSkillFactory({
+  name: 'Responsive HTML',
+  icon: 'simple-icons:html5',
+  iconColor: '#E34F26',
+  url: 'https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design',
+});
+
+export const webAccessibility = createSkillFactory({
+  name: 'Web Accessibility',
+  icon: 'simple-icons:electronbuilder',
+  iconColor: '#0B2C4A',
+  url: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/',
 });
 
 export const chakraUi = createSkillFactory({
@@ -58,6 +93,13 @@ export const firebase = createSkillFactory({
   icon: 'simple-icons:firebase',
   iconColor: '#FFCA28',
   url: 'https://firebase.google.com/',
+});
+
+export const gcp = createSkillFactory({
+  name: 'Google Cloud Platform',
+  icon: 'simple-icons:googlecloud',
+  iconColor: '#4285F4',
+  url: 'https://cloud.google.com/',
 });
 
 export const jest = createSkillFactory({
