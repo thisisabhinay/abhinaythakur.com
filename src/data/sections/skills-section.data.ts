@@ -110,11 +110,11 @@ const skillsSectionData = {
             'Skilled in utilizing Firebase, for rapidly developing and deploying web applications with features like authentication and real-time database functionality.',
         }),
 
-        nestJs({
-          level: 2,
-          description:
-            'Adept in utilizing Nest.js, a powerful Node.js framework, to develop scalable and modular applications with a focus on code structure and maintainability.',
-        }),
+        // nestJs({
+        //   level: 2,
+        //   description:
+        //     'Adept in utilizing Nest.js, a powerful Node.js framework, to develop scalable and modular applications with a focus on code structure and maintainability.',
+        // }),
       ],
     },
     {
